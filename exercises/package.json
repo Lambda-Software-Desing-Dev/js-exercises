@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.20.0"
   }
 }
