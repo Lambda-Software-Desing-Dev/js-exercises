@@ -1,6 +1,6 @@
 import './style.css'
 import lambdaLogo from '/lambdaSD&D.svg'
-import { callHtml } from './00 - Introduction/intro.js'
+import { intro } from './00 - Introduction/intro.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -25,12 +25,12 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-let link = document.querySelector("#logo")
-//document.querySelector("#nav").innerHTML = await (await fetch('./src/nav/nav.html')).text()
+let logo = document.querySelector("#logo")
+document.querySelector("#nav").innerHTML = await (await fetch('./src/nav/nav.html')).text()
 
-link.addEventListener('click', (e) =>
+logo.addEventListener('click', async (e) =>
 {
-  callHtml(document.querySelector('#content'))
+  await intro(document.querySelector('#content'))
   document.querySelector("#main").style.display = 'inline'
   document.querySelector("#home").style.display = 'none'
 })

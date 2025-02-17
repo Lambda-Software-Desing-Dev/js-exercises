@@ -1,15 +1,11 @@
-export function callHtml(element) {
-    element.innerHTML = `
-    <h2>00 - Introduccion</h2>
-    <p>
-        En este capitulo realizaremos ejercicios basicos de Javascript. <br />
-        Comenzaremos declarando una variable, asignadole el valor 'Hola Mundo' <br />y mostrando el resultado por consola. <br />
-    
-        Si desea ver como resolver este ejercicio haga click en "Resoluci&oacute;n"
-    </p>
-    <details>
-        <summary>Resoluci&oacute;n</summary>
-        <pre>let gretting = "Hola Mundo!"<br />console.log(gretting)</pre>
-    </details>
-    `
+import { exercise1 } from './exercise1'
+
+export async function intro(element) {
+    element.innerHTML = await (await fetch('./src/00 - Introduction/intro0.html')).text()
+
+    document.querySelector("#prev").style.display = 'none'
+    document.querySelector("#next").addEventListener('click', async () =>
+    {
+        await exercise1(element)
+    })
 }
