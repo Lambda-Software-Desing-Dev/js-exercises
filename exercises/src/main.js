@@ -16,6 +16,11 @@ document.querySelector('#app').innerHTML = `
     <div id="main" style="display:none">
       <div id="nav"></div>
       <div id="content"></div>
+      <iframe src="https://www.jsplayground.dev/" title="jsplayground" width="640px" height="480px">
+      </iframe>
+
+      <p>Agradecimientos especiales a <a href="https://www.jsplayground.dev/">jsplayground.dev</a>
+      por facilitar este entorno</p>
     </div>
   </div>
 `

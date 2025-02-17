@@ -111,3 +111,11 @@ li a {
   padding: 8px;
   background-color: light dark;
 }
+
+details {
+  text-align: left;
+}
+
+details pre {
+  text-align: left;
+}
