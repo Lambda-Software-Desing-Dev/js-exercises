@@ -26,11 +26,11 @@ document.querySelector('#app').innerHTML = `
 `
 
 let logo = document.querySelector("#logo")
-document.querySelector("#nav").innerHTML = await (await fetch('./src/nav/nav.html')).text()
+document.querySelector("#nav").innerHTML = await (await fetch('./src/00 - Introduction/nav.html')).text()
 
 logo.addEventListener('click', async (e) =>
 {
-  await intro(document.querySelector('#content'))
+  await intro(document.querySelector('#content'), true)
   document.querySelector("#main").style.display = 'inline'
   document.querySelector("#home").style.display = 'none'
 })

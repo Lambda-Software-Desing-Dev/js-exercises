@@ -119,3 +119,8 @@ details {
 details pre {
   text-align: left;
 }
+
+.disabled-link {
+  pointer-events: none;
+  color:grey;
+}
