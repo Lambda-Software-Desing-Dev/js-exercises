@@ -10,7 +10,7 @@ export async function intro(element, setNav) {
     }
 }
 
-async function setNavigation(element){
+async function setNavigation(element) {
 
     document.querySelector("#intro0").addEventListener('click', async function intro0()
     {
@@ -20,7 +20,6 @@ async function setNavigation(element){
     document.querySelector("#intro1").addEventListener('click', async function intro1()
     {
         await exercise1(element)
-        //this.removeEventListener('click', intro1)
     })
 
     document.querySelector("#intro2").addEventListener('click', async function intro2()
