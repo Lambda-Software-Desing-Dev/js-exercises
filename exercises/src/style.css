@@ -95,18 +95,18 @@ button:focus-visible {
   }
 }
 
-ul {
+ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+ul.nav > li {
   float: left;
 }
 
-li a {
+ul.nav > li a {
   display: block;
   padding: 8px;
   background-color: light dark;
@@ -123,4 +123,31 @@ details pre {
 .disabled-link {
   pointer-events: none;
   color:grey;
+}
+
+.main {
+  grid-template-areas:
+    "menu nav"
+    "menu content"
+    "footer footer";
+}
+
+.main > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.main > div.menu {
+  grid-area: menu;
+}
+.main > div.content {
+  grid-area: content;
+}
+.main > div.footer {
+  grid-area: footer;
+}
+
+.tree {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
