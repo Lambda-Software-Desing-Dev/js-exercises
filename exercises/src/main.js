@@ -1,6 +1,7 @@
 import './style.css'
 import lambdaLogo from '/lambdaSD&D.svg'
-import { intro } from './00 - Introduction/intro.js'
+import { intro00 } from './00 - Introduction/intro.js'
+import { setMenu } from './menu'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -8,7 +9,7 @@ document.querySelector('#app').innerHTML = `
       <a id="logo">
         <img src="${lambdaLogo}" class="logo" alt="Lambda logo" />
       </a>
-      <h1>Bienvenido a Lambda-SD&D School!</h1>
+      <h1>Bienvenido a Lambda Software School!</h1>
       <p class="read-the-docs">
         Haga click en el logo para continuar
       </p>
@@ -32,11 +33,12 @@ document.querySelector('#app').innerHTML = `
 let logo = document.querySelector("#logo")
 document.querySelector("#nav").innerHTML = await (await fetch('./src/00 - Introduction/nav.html')).text()
 document.querySelector("#menu").innerHTML = await (await fetch('./src/menu.html')).text()
+setMenu()
 
 logo.addEventListener('click', async (e) =>
 {
   let content = document.querySelector('#content')
-  await intro(content, true)
+  await intro00(content, true)
   document.querySelector("#main").style.display = 'grid'
   document.querySelector("#home").style.display = 'none'
 })

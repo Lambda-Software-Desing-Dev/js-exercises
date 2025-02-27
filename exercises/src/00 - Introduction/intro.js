@@ -2,7 +2,7 @@ import { exercise1 } from './exercise1'
 import { exercise2 } from './exercise2'
 import { exercise3 } from './exercise3'
 
-export async function intro(content, setNav) {
+export async function intro00(content, setNav) {
     content.innerHTML = await (await fetch('./src/00 - Introduction/intro0.html')).text()
 
     if(setNav) {
@@ -14,7 +14,7 @@ async function setNavigation(content) {
 
     document.querySelector("#intro0").addEventListener('click', async function intro0()
     {
-        await intro(content, false)
+        await intro00(content, false)
     })
 
     document.querySelector("#intro1").addEventListener('click', async function intro1()
