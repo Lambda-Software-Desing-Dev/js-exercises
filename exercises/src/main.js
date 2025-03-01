@@ -30,8 +30,6 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-main().finally()
-
 const logo = document.querySelector("#logo")
 
 logo.addEventListener('click', async () =>
@@ -41,12 +39,3 @@ logo.addEventListener('click', async () =>
   document.querySelector("#main").style.display = 'grid'
   document.querySelector("#home").style.display = 'none'
 })
-
-async function main()
-{
-  const htmlNav = await fetch('./src/00.Introduction/nav.html')
-  const htmlMenu = await fetch('./src/menu.html')
-  document.querySelector("#nav").innerHTML = (await htmlNav).text()
-  document.querySelector("#menu").innerHTML = (await htmlMenu).text()
-  setMenu()
-}
