@@ -1,6 +1,6 @@
 import './style.css'
 import lambdaLogo from '/lambdaSD&D.svg'
-import { intro00 } from './00 - Introduction/intro.js'
+import { intro0 } from './00 - Introduction/intro.js'
 import { setMenu } from './menu'
 
 document.querySelector('#app').innerHTML = `
@@ -38,7 +38,7 @@ setMenu()
 logo.addEventListener('click', async (e) =>
 {
   let content = document.querySelector('#content')
-  await intro00(content, true)
+  await intro0(content, true)
   document.querySelector("#main").style.display = 'grid'
   document.querySelector("#home").style.display = 'none'
 })
