@@ -1,6 +1,6 @@
 import './style.css'
 import lambdaLogo from '/lambdaSD&D.svg'
-import { intro0 } from './00 - Introduction/intro.js'
+import { intro0 } from './00.Introduction/intro.js'
 import { setMenu } from './menu'
 
 document.querySelector('#app').innerHTML = `
@@ -46,7 +46,7 @@ async function main()
 {
   const htmlNav = await fetch('./src/00 - Introduction/nav.html')
   const htmlMenu = await fetch('./src/menu.html')
-  document.querySelector("#nav").innerHTML = await htmlNav.text()
-  document.querySelector("#menu").innerHTML = await htmlMenu.text()
+  document.querySelector("#nav").innerHTML = (await htmlNav).text()
+  document.querySelector("#menu").innerHTML = (await htmlMenu).text()
   setMenu()
 }
