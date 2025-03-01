@@ -3,7 +3,7 @@ import { exercise2 } from './exercise2'
 import { exercise3 } from './exercise3'
 
 export async function intro0(content, setNav) {
-    content.innerHTML = await (await fetch('./src/00 - Introduction/intro0.html')).text()
+    content.innerHTML = await (await fetch('./src/00.Introduction/intro0.html')).text()
 
     if(setNav) {
         setNavigation(content)

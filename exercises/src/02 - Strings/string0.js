@@ -1,5 +1,5 @@
 export async function string0(content, setNav) {
-    /*content.innerHTML = await (await fetch('./src/00 - Introduction/intro0.html')).text()
+    /*content.innerHTML = await (await fetch('./src/00.Introduction/intro0.html')).text()
 
     if(setNav) {
         setNavigation(content)
