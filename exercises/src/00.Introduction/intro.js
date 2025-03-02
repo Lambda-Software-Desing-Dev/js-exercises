@@ -12,8 +12,8 @@ export async function intro0(content, setNav) {
 }
 
 async function setNavigation(content) {
-    document.querySelector("#nav").innerHTML = await (await fetch('./src/00.Introduction/nav.html')).text()
-    document.querySelector("#menu").innerHTML = await (await fetch('./src/menu.html')).text()
+    document.querySelector("#nav").innerHTML = await (await fetch('./00.Introduction/nav.html')).text()
+    document.querySelector("#menu").innerHTML = await (await fetch('./menu.html')).text()
     setMenu()
 
     document.querySelector("#intro0").addEventListener('click', async () =>
