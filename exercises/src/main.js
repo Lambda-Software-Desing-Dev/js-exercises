@@ -1,7 +1,6 @@
 import './style.css'
 import lambdaLogo from '/lambdaSD&D.svg'
 import { intro0 } from './00.Introduction/intro.js'
-import { setMenu } from './menu'
 
 document.querySelector('#app').innerHTML = `
   <div>
