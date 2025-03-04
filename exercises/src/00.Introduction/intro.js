@@ -1,38 +1,56 @@
-import { exercise1 } from './exercise1'
-import { exercise2 } from './exercise2'
-import { exercise3 } from './exercise3'
-import { setMenu } from '../menu'
+import { exercise1Html } from './exercise1'
+import { exercise2Html } from './exercise2'
+import { exercise3Html } from './exercise3'
+import { nav0Html } from './nav0'
+import { menuHtml, setMenu } from '../menu'
 
-export async function intro0(content, setNav) {
-    content.innerHTML = await (await fetch('./src/00.Introduction/intro0.html')).text()
+export function intro0(content, setNav) {
+    content.innerHTML = introHtml()
 
     if(setNav) {
         setNavigation(content)
     }
 }
 
+function introHtml() {
+    return `
+    <h2>Capitulo 00 - Introducci&oacute;n</h2>
+    <h3>Ejercicio 0</h3>
+    <p>
+        En este capitulo realizaremos ejercicios basicos de Javascript. <br />
+        Comenzaremos declarando una variable, asignadole el valor 'Hola Mundo' <br />
+        y mostrando el resultado por consola. <br />
+        Si desea ver como resolver este ejercicio haga click en "Resoluci&oacute;n"
+    </p>
+    <details>
+        <summary>Resoluci&oacute;n</summary>
+        <pre>let gretting = "Hola Mundo!"<br />console.log(gretting)</pre>
+    </details>
+`
+}
+
 async function setNavigation(content) {
-    document.querySelector("#nav").innerHTML = await (await fetch('./src/00.Introduction/nav.html')).text()
-    document.querySelector("#menu").innerHTML = await (await fetch('./src/menu.html')).text()
+    document.querySelector("#nav").innerHTML = nav0Html()
+    document.querySelector("#menu").innerHTML = menuHtml()
     setMenu()
 
     document.querySelector("#intro0").addEventListener('click', async () =>
     {
-        await intro0(content, false)
+        intro0(content, false)
     })
 
-    document.querySelector("#intro1").addEventListener('click', async () =>
+    document.querySelector("#intro1").addEventListener('click', () =>
     {
-        await exercise1(content)
+        content.innerHTML = exercise1Html()
     })
 
-    document.querySelector("#intro2").addEventListener('click', async () =>
+    document.querySelector("#intro2").addEventListener('click', () =>
     {
-        await exercise2(content)
+        content.innerHTML = exercise2Html()
     })
 
-    document.querySelector("#intro3").addEventListener('click', async () =>
+    document.querySelector("#intro3").addEventListener('click', () =>
     {
-        await exercise3(content)
+        content.innerHTML = exercise3Html()
     })
 }
