@@ -1,6 +1,6 @@
 import { intro0 } from './00.Introduction/intro'
 import { arith0 } from './01.Arithmetic/arith0'
-import { string0 } from './02.Strings/string0'
+import { string0Html } from './02.Strings/string0'
 
 export function menuHtml() {
     return  `
@@ -24,13 +24,13 @@ export function setMenu() {
         intro0(content, true)
     })
     
-    document.querySelector("#cap1").addEventListener('click', async function cap1()
+    document.querySelector("#cap1").addEventListener('click', () =>
     {
-        await arith0(content, true)
+        arith0(content, true)
     })
-    /*
-    document.querySelector("#cap2").addEventListener('click', async function cap2()
+    
+    document.querySelector("#cap2").addEventListener('click', () =>
     {
-        await string0(content, true)
-    })*/
+        content.innerHTML = string0Html()
+    })
 }
