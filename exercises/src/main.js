@@ -1,6 +1,6 @@
 import './style.css'
 import lambdaLogo from '/lambdaSD&D.svg'
-import { intro0 } from './00.Introduction/intro.js'
+import { intro0 } from './00.Introduction/intro'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -29,10 +29,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-const logo = document.querySelector("#logo")
-
-logo.addEventListener('click', async () =>
-{
+document.querySelector("#logo").addEventListener('click', async () => {
   let content = document.querySelector('#content')
   await intro0(content, true)
   document.querySelector("#main").style.display = 'grid'
