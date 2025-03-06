@@ -1,6 +1,7 @@
-import { arith1Html } from './arith1'
 import { nav1Html } from './nav1'
 import { menuHtml, setMenu } from '../menu'
+import { arith1Html } from './arith1'
+import { arith2Html } from './arith2'
 
 export function arith0(content, setNav) {
     content.innerHTML = arith0Html()
@@ -24,10 +25,11 @@ function arith0Html() {
 </p>
 <details>
     <summary>Resoluci&oacute;n</summary>
-    <pre> let primerSumando = 200.05
-    let segundoSumando = 400.10
-    let resulado = primerSumando + segundoSumando
-    console.log("El resultado de la suma es: " + resulado.toFixed(2))
+    <pre>
+let primerSumando = 200.05
+let segundoSumando = 400.10
+let resulado = primerSumando + segundoSumando
+console.log("El resultado de la suma es: " + resulado.toFixed(2))
     </pre>
 </details>
 `
@@ -47,5 +49,10 @@ async function setNavigation(content) {
     document.querySelector("#arith1").addEventListener('click', () =>
     {
         content.innerHTML = arith1Html()
+    })
+    
+    document.querySelector("#arith2").addEventListener('click', () =>
+    {
+        content.innerHTML = arith2Html()
     })
 }

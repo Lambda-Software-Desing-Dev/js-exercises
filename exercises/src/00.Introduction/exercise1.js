@@ -3,10 +3,9 @@ export function exercise1Html() {
 <h2>Capitulo 00 - Introducci&oacute;n</h2>
 <h3>Ejercicio 1</h3>
 <p>
-    En el primer ejercicio de Introducci&oacute;n,<br />
-    vamos a mostrar un mensaje de advertencia<br />
-    debemos declarar una variable con el valor "Esto es un mensaje de Advertencia!"<br />
-    y mediante la sentencia <pre>alert</pre> desplegar una ventana modal con dicho mensaje
+    En el primer ejercicio de Introducci&oacute;n, vamos a mostrar un mensaje de advertencia<br />
+    debemos declarar una variable con el valor <span style="font-family:courier;">"Esto es un mensaje de Advertencia!"</span><br />
+    y mediante la sentencia <span style="font-family:courier;">alert</span> desplegar una ventana modal con dicho mensaje
 </p>
 <details>
     <summary>Resoluci&oacute;n</summary>

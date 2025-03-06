@@ -1,7 +1,7 @@
-export async function arith1(content) {
+/*export async function arith1(content) {
     content.innerHTML = await (await fetch('./src/01 - Arithmetic/arith1.html')).text()
 }
-
+*/
 export function arith1Html() {
     return `
 <h2>Capitulo 01 - Aritmetica Basica</h2>
@@ -16,14 +16,15 @@ export function arith1Html() {
 </p>
 <details>
     <summary>Resoluci&oacute;n</summary>
-    <pre> let primerFactor = 40.10
-    let segundoFactor = 20.05
-    let resta = primerFactor - segundoFactor
-    let multiplicacion = primerFactor * segundoFactor
-    let division = primerFactor / segundoFactor
-    console.log("El resultado de la resta es: " + resta)
-    console.log("El resultado de la multiplicacion es: " + multiplicacion)
-    console.log("El resultado de la division es: " + division)
+    <pre>
+let primerFactor = 20.20
+let segundoFactor = 10.10
+let resta = primerFactor - segundoFactor
+let multiplicacion = primerFactor * segundoFactor
+let division = primerFactor / segundoFactor
+console.log("El resultado de la resta es: " + resta)
+console.log("El resultado de la multiplicacion es: " + multiplicacion.toFixed(2))
+console.log("El resultado de la division es: " + division)
     </pre>
 </details>
 `
