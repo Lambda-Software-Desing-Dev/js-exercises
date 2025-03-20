@@ -2,6 +2,7 @@ import { nav1Html } from './nav1'
 import { menuHtml, setMenu } from '../menu'
 import { arith1Html } from './arith1'
 import { arith2Html } from './arith2'
+import { arith3Html } from './arith3'
 
 export function arith0(content, setNav) {
     content.innerHTML = arith0Html()
@@ -54,5 +55,10 @@ async function setNavigation(content) {
     document.querySelector("#arith2").addEventListener('click', () =>
     {
         content.innerHTML = arith2Html()
+    })
+
+    document.querySelector("#arith3").addEventListener('click', () =>
+    {
+        content.innerHTML = arith3Html()
     })
 }
