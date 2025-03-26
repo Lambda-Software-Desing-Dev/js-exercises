@@ -7,8 +7,8 @@ export function arith3Html() {
     Vamos a crear un programa para calcular la nota final de la materia "Algoritmos"<br />
     Utilizando la funcion <span style="font-family:courier;">Prompt</span> ingresaremos por pantalla<br />
     la nota de los 3 trimestres y mostrar por consola el resultado.<br />
-    Tene en cuenta que la funcion Prompt devuelve valores del tipo string, por lo que recomiendo utilizar <span style="font-family:courier;">parseFloat</span><br />
-    para convertir los resultados ingresados por pantalla a valores decimales
+    Tene en cuenta que la funcion Prompt devuelve valores del tipo string, por lo que recomiendo<br />
+    utilizar <span style="font-family:courier;">parseFloat</span> para convertir los resultados ingresados por pantalla a valores decimales
 </p>
 <details>
     <summary>Resoluci&oacute;n</summary>
