@@ -1,8 +1,4 @@
-export async function exercise3(content) {
-    content.innerHTML = await (await fetch('./src/00.Introduction/intro3.html')).text()
-}
-
-export function exercise3Html() {
+export function intro3Html() {
     return `
 <h2>Capitulo 00 - Introducci&oacute;n</h2>
 <h3>Ejercicio 3</h3>

@@ -1,8 +1,8 @@
 import { menuHtml, setMenu } from '../menu'
 import { intro0 } from './intro0'
-import { exercise1Html } from './exercise1'
-import { exercise2Html } from './exercise2'
-import { exercise3Html } from './exercise3'
+import { intro1Html } from './intro1'
+import { intro2Html } from './intro2'
+import { intro3Html } from './intro3'
 
 export function nav0Html() {
     return `
@@ -28,16 +28,16 @@ export function setNav0(content) {
 
     document.querySelector("#intro1").addEventListener('click', () =>
     {
-        content.innerHTML = exercise1Html()
+        content.innerHTML = intro1Html()
     })
 
     document.querySelector("#intro2").addEventListener('click', () =>
     {
-        content.innerHTML = exercise2Html()
+        content.innerHTML = intro2Html()
     })
 
     document.querySelector("#intro3").addEventListener('click', () =>
     {
-        content.innerHTML = exercise3Html()
+        content.innerHTML = intro3Html()
     })
 }

@@ -1,4 +1,4 @@
-export function exercise1Html() {
+export function intro1Html() {
     return `
 <h2>Capitulo 00 - Introducci&oacute;n</h2>
 <h3>Ejercicio 1</h3>
