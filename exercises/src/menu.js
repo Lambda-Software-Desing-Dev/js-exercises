@@ -1,7 +1,7 @@
 import { intro0 } from './00.Introduction/intro0'
 import { arith0 } from './01.Arithmetic/arith0'
 import { bools0 } from './02.Booleans/bools0'
-import { string0Html } from './03.Strings/string0'
+import { string0 } from './03.Strings/string0'
 
 export function menuHtml() {
     return  `
@@ -38,6 +38,6 @@ export function setMenu() {
     
     document.querySelector("#cap3").addEventListener('click', () =>
     {
-        content.innerHTML = string0Html()
+        string0(content, true)
     })
 }

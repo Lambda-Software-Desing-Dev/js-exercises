@@ -1,3 +1,13 @@
+import { setNav3 } from './nav3'
+
+export function string0(content, setNav) {
+    content.innerHTML = string0Html()
+    
+    if(setNav) {
+        setNav3(content)
+    }
+}
+
 export function string0Html() {
     //TODO: Excercise 1 -> Get fixed length
     //TODO: Excercise 2 -> Get variable length with prompt
