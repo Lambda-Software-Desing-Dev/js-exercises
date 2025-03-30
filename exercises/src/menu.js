@@ -1,4 +1,4 @@
-import { intro0 } from './00.Introduction/intro'
+import { intro0 } from './00.Introduction/intro0'
 import { arith0 } from './01.Arithmetic/arith0'
 import { string0Html } from './02.Strings/string0'
 
