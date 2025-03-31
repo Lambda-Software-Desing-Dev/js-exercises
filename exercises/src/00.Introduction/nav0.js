@@ -1,3 +1,9 @@
+import { menuHtml, setMenu } from '../menu'
+import { intro0 } from './intro0'
+import { intro1Html } from './intro1'
+import { intro2Html } from './intro2'
+import { intro3Html } from './intro3'
+
 export function nav0Html() {
     return `
 <ul class="nav">
@@ -8,4 +14,30 @@ export function nav0Html() {
     <li><a class="tab" href="#" id="intro3">Ejercicio 3</a></li>
 </ul>
 `
+}
+
+export function setNav0(content) {
+    document.querySelector("#nav").innerHTML = nav0Html()
+    document.querySelector("#menu").innerHTML = menuHtml()
+    setMenu()
+
+    document.querySelector("#intro0").addEventListener('click', () =>
+    {
+        intro0(content, false)
+    })
+
+    document.querySelector("#intro1").addEventListener('click', () =>
+    {
+        content.innerHTML = intro1Html()
+    })
+
+    document.querySelector("#intro2").addEventListener('click', () =>
+    {
+        content.innerHTML = intro2Html()
+    })
+
+    document.querySelector("#intro3").addEventListener('click', () =>
+    {
+        content.innerHTML = intro3Html()
+    })
 }

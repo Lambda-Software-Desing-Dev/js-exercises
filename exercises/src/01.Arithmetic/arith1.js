@@ -3,24 +3,17 @@ export function arith1Html() {
 <h2>Capitulo 01 - Aritmetica Basica</h2>
 <h3>Ejercicio 1</h3>
 <p>
-    Vamos a ponerle un poco mas de ritmo<br />
-    Declararemos otras dos variables numericas, pueden ser valores enteros o decimales<br />
-    pero en este caso vamos a restarlas y mostrarlo por consola<br />
-    multiplicar las mismas variables y mostrarlo por consola<br />
-    y por ultimo dividirlas y mostrarlo por consola<br />
-    Si desea ver como resolver este ejercicio haga click en "Resoluci&oacute;n"
+    Ahora veremos como realizar una potencia y una raiz cuadrada<br />
+    Para ello podemos usar las funciones <span style="font-family:courier;">Math.pow()</span> y <span style="font-family:courier;">Math.sqrt()</span> respectivamente<br />
+    Si queres saber como resolver este ejercicio hace click en "Resoluci&oacute;n"
 </p>
 <details>
     <summary>Resoluci&oacute;n</summary>
     <pre>
-let primerFactor = 20.20
-let segundoFactor = 10.10
-let resta = primerFactor - segundoFactor
-let multiplicacion = primerFactor * segundoFactor
-let division = primerFactor / segundoFactor
-console.log("El resultado de la resta es: " + resta)
-console.log("El resultado de la multiplicacion es: " + multiplicacion.toFixed(2))
-console.log("El resultado de la division es: " + division)
+let potenciaDeCuatro = Math.pow(4, 2)
+let raizDeCuatro = Math.sqrt(4)
+console.log("El resultado de elevar 4 al cuadrado es: " + potenciaDeCuatro)
+console.log("La raiz cuadrada de 4 es: " + raizDeCuatro)
     </pre>
 </details>
 `
