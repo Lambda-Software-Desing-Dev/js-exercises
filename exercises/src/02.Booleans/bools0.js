@@ -9,11 +9,13 @@ export function bools0(content, setNav) {
 }
 
 function bools0Html() {
-    //TODO: Excercise 1 -> Greater than 18 (use Confirm)
-    //TODO: Excercise 2 -> Validate sequence equal to '1234' (use Prompt)
+    //TODO: Excercise 0 -> Greater than 18 (use Confirm)
+    //TODO: Excercise 1 -> Validate sequence equal to '1234' (use Prompt)
     //TODO: Excercise 2 -> Greater than 18 (use Prompt)
     //TODO: Excercise 3 -> Validate range between 0 - 10 (use Prompt)
     //TODO: Excercise 4 -> Vote Validator (use 2 Confirm - AND operator)
     //TODO: Excercise 5 -> IT Background Requests (use 3 Confirm - OR operator)
-    return `<h2>Capitulo 02 - Booleanos</h2><h3>Ejercicio 0</h3><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>`
+    return `<h2>Capitulo 02 - Booleanos</h2>
+<h3>Ejercicio 0</h3>
+<p></p>`
 }

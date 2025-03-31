@@ -9,8 +9,8 @@ export function string0(content, setNav) {
 }
 
 export function string0Html() {
-    //TODO: Excercise 1 -> Get fixed length
-    //TODO: Excercise 2 -> Get variable length with prompt
+    //TODO: Excercise 0 -> Get fixed length
+    //TODO: Excercise 1 -> Get variable length with prompt
     //TODO: Excercise 2 -> Concatenate strings & format with ${}
     //TODO: Excercise 3 -> Upper, Lower & Trim
     //TODO: Excercise 4 -> Replace & Slice

@@ -16,7 +16,7 @@ function introHtml() {
         En este capitulo realizaremos ejercicios basicos de Javascript. <br />
         Comenzaremos declarando una variable, asignadole el valor <span style="font-family:courier;">'Hola Mundo'</span><br />
         y mostrando el resultado por consola. <br />
-        Si desea ver como resolver este ejercicio haga click en "Resoluci&oacute;n"
+        Si deseas ver como resolver este ejercicio hace click en "Resoluci&oacute;n"
     </p>
     <details>
         <summary>Resoluci&oacute;n</summary>
